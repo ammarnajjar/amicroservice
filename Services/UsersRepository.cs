@@ -5,12 +5,6 @@ namespace amicroservice.Services
 {
     public class UsersRepository
     {
-        private const string CacheKey = "UserStore";
-
-        public UsersRepository()
-        {
-        }
-
         public User[] AllUsers
         {
             get
