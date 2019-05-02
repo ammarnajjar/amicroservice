@@ -6,7 +6,7 @@ WORKDIR /src
 
 COPY amicroservice.csproj amicroservice/
 RUN dotnet restore amicroservice/amicroservice.csproj
-WORKDIR src/amicroservice
+WORKDIR /src/amicroservice
 COPY . .
 RUN dotnet build amicroservice.csproj -c Release -o /app
 
