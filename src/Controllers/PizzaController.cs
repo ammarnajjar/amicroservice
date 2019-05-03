@@ -15,9 +15,9 @@ namespace amicroservice.Controllers
     public class PizzaController : ControllerBase
     {
 
-        private readonly PizzaContext _pizzaContext;
+        private readonly IDbContext _pizzaContext;
 
-        public PizzaController(PizzaContext context)
+        public PizzaController(IDbContext context)
         {
             _pizzaContext = context;
             if (_pizzaContext != null)
@@ -32,7 +32,7 @@ namespace amicroservice.Controllers
 
         // GET api/pizza
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pizza>>> Get()
+        public async Task<ActionResult<ICollection<Pizza>>> Get()
         {
             return await _pizzaContext.PizzaOrders.ToListAsync();
         }
