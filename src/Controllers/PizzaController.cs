@@ -20,18 +20,21 @@ namespace amicroservice.Controllers
         public PizzaController(PizzaContext context)
         {
             _pizzaContext = context;
-            if (_pizzaContext.PizzaOrders.Count() == 0)
+            if (_pizzaContext != null)
             {
-                _pizzaContext.PizzaOrders.Add(Pizza.Default());
-                _pizzaContext.SaveChanges();
+                if (_pizzaContext.PizzaOrders.Count() == 0)
+                {
+                    _pizzaContext.PizzaOrders.Add(Pizza.Default());
+                    _pizzaContext.SaveChanges();
+                }
             }
         }
 
         // GET api/pizza
         [HttpGet]
-        public ActionResult<IEnumerable<Pizza>> Get()
+        public async Task<ActionResult<IEnumerable<Pizza>>> Get()
         {
-            return _pizzaContext.PizzaOrders.ToList();
+            return await _pizzaContext.PizzaOrders.ToListAsync();
         }
 
         // GET api/pizza/5
