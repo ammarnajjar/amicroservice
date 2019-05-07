@@ -1,6 +1,6 @@
 
 // Factory Pattern
-namespace amicroservice.Models
+namespace amicroservice.Models.Factory
 {
     public class Pizza
     {

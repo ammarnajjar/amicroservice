@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace amicroservice.Models
+namespace amicroservice.Models.Factory
 {
     public interface IDbContext
     {

@@ -1,4 +1,4 @@
-using amicroservice.Models;
+using amicroservice.Models.Factory;
 using NUnit.Framework;
 
 namespace amicroservice.Tests

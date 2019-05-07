@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using amicroservice.Models;
 
-namespace amicroservice.Models
+namespace amicroservice.Models.Factory
 {
     public class PizzaContext : DbContext, IDbContext
     {
