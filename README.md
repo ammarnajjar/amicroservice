@@ -57,6 +57,19 @@ This is an example of implement [builder](https://en.wikipedia.org/wiki/Builder_
 ]
 ```
 
+### /api/forecast
+
+This is an example of implement [adapter](https://en.wikipedia.org/wiki/Adapter_pattern) design pattern.
+
+- `GET`: returns a list of temperature conversions
+
+```JSON
+[
+  "100 in Fahrenheit is 37.7777777777778 in Celsius",
+  "0 in Celsius is 32 in Fahrenheit"
+]
+```
+
 ### /api/pizza
 
 This is an example of implement [factory](https://en.wikipedia.org/wiki/Factory_method_pattern) design pattern.
