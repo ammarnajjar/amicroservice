@@ -1,0 +1,11 @@
+language: csharp
+
+matrix:
+  include:
+    - dotnet: 2.2.102
+      mono: none
+    - mono: latest
+
+script:
+  - dotnet test Tests
+  - dotnet build src
