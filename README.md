@@ -1,4 +1,8 @@
-# Simple Webapi
+
+[![Build Status](https://travis-ci.com/ammarnajjar/amicroservice.svg?branch=master)](https://travis-ci.com/ammarnajjar/amicroservice)
+
+
+# Simple Microservice with Webapi
 
 To run using docker:
 
