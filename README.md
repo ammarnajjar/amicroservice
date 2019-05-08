@@ -99,3 +99,9 @@ Request body:
 ```
 
 - `DELETE`: `/api/pizza/{id}` to remove pizza with id from the list
+
+
+## Refer to:
+-  [ChangeLog](https://github.com/ammarnajjar/amicroservice/blob/master/CHANGELOG.md)
+
+- [LISENCE](https://github.com/ammarnajjar/amicroservice/blob/master/LICENSE)
